@@ -1,4 +1,75 @@
 <main>
-    <h1>Welcome to My Portfolio</h1>
-    <p>My name is Saajith Gnanakanthan and this is a collection of my work and projects with an introduction on who I am.</p>
+    <!-- Hero Section (Home) -->
+    <section id="home" class="hero text-center text-light py-5">
+        <h1 class="display-4">Hello, I'm Saajith Gnanakanthan</h1>
+        <p class="lead">A Passionate Developer and Tech Enthusiast</p>
+        <a href="#projects" class="btn btn-primary mt-3">View My Projects</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5 text-center">
+        <h2>About Me</h2>
+        <img src="/images/myphoto.JPG" alt="A photo of Saajith Gnanakanthan" class="profile-photo mb-3">
+        <p class="lead">I'm a second-year student at Ontario Tech, passionate about technology, coding, and entrepreneurship. Welcome to my portfolio, where you can learn more about me and my work.</p>
+        <video controls poster="/images/poster.jpg" class="intro-video mt-3">
+            <source src="/videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5 text-center bg-dark text-light">
+        <h2>My Projects</h2>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="project-card p-4 rounded shadow-sm">
+                        <h3>Project 1: Simple Game Development</h3>
+                        <p>Text-based adventure games and number-guessing games. It was a rewarding challenge that improved my coding skills.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="project-card p-4 rounded shadow-sm">
+                        <h3>Project 2: Learning HTML and CSS</h3>
+                        <p>Created responsive layouts with HTML and CSS, gaining an understanding of aesthetics and functionality in web design.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="project-card p-4 rounded shadow-sm">
+                        <h3>Project 3: Building a Portfolio Website</h3>
+                        <p>This website is one of my projects, using Node.js, Express, and EJS to create a dynamic portfolio site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 text-center">
+        <h2>Contact Me</h2>
+        <p>Send me your questions, comments, and project-related queries!</p>
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="text-left mx-auto" style="max-width: 600px;">
+            <input type="hidden" name="accessKey" value="2b1471a0-5d34-46c5-9454-3b443f8d525e">
+
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Enter your message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
 </main>

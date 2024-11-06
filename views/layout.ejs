@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %> | Saajith Gnanakanthan Portfolio</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Me</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact Me</a></li>
-            </ul>
+    <header class="bg-dark text-white py-3">
+        <nav class="container navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#home">Saajith's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main class="container">
+    <main>
         <%- body %>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Saajith Gnanakanthan</p>
-        <p>Contact: <a href="mailto:saajith.gnanakanthan@ontariotechu.net">saajith.gnanakanthan@ontariotechu.net</a></p>
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2024 Saajith Gnanakanthan | Contact: <a href="mailto:saajith.gnanakanthan@ontariotechu.net" class="text-white">saajith.gnanakanthan@ontariotechu.net</a></p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
