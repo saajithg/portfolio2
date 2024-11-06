@@ -1,71 +1,67 @@
-<main>
-    <!-- Home Section -->
-    <section id="home" class="hero text-center text-light py-5">
-        <h1 class="display-4">Hello, I'm Saajith Gnanakanthan</h1>
-        <p class="lead">A Passionate Developer and Tech Enthusiast</p>
-        <a href="#projects" class="btn btn-primary mt-3">View My Projects</a>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | Saajith Gnanakanthan Portfolio</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section py-5 text-center">
-        <h2>About Me</h2>
-        <img src="/images/myphoto.JPG" alt="A photo of Saajith Gnanakanthan" class="profile-photo mb-3">
-        <p class="lead">I'm a second-year student at Ontario Tech, passionate about technology, coding, and entrepreneurship. Welcome to my portfolio, where you can learn more about me and my work.</p>
-    </section>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>My name is Saajith Gnanakanthan and this is a collection of my work and projects with an introduction on who I am.</p>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section py-5 text-center">
-        <h2>My Projects</h2>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="project-card p-4 rounded shadow-sm">
-                        <h3>Project 1: Simple Game Development</h3>
-                        <p>Text-based adventure games and number-guessing games. It was a rewarding challenge that improved my coding skills.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="project-card p-4 rounded shadow-sm">
-                        <h3>Project 2: Learning HTML and CSS</h3>
-                        <p>Created responsive layouts with HTML and CSS, gaining an understanding of aesthetics and functionality in web design.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="project-card p-4 rounded shadow-sm">
-                        <h3>Project 3: Building a Portfolio Website</h3>
-                        <p>This website is one of my projects, using Node.js, Express, and EJS to create a dynamic portfolio site.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <img src="/images/myphoto.JPG" alt="A photo of Saajith Gnanakanthan" class="profile-photo">
+            <p>I am a second year student at Ontario Tech who is passionate about technology, coding, and entrepreneurship.</p>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section py-5 text-center">
-        <h2>Contact Me</h2>
-        <p>Send me your questions, comments, and project-related queries!</p>
-        <form action="https://api.staticforms.xyz/submit" method="POST" class="text-left mx-auto" style="max-width: 600px;">
-            <input type="hidden" name="accessKey" value="2b1471a0-5d34-46c5-9454-3b443f8d525e">
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>My Projects</h1>
+            <article>
+                <h2>Project 1: Simple Game Development</h2>
+                <p>Of the projects, I enjoyed various creations that ranged from simple text-based adventure games to number-guessing games. Simple as they might seem, it really turned out to be one of the best practices, since I learned hands-on how to perform some basic stuff in programming: loops, conditionals, handling user input—all tools that would become quite essential for any developer. What was exciting about this project was how a few lines of code could make it so engaging; it really made me understand just how much goes into the thoughtfulness of game mechanics. Literally every single game that I built taught me something new, and all of them were not just fun to make but also a rewarding challenge that pushed me to improve my coding skills.</p>
+            </article>
+            <article>
+                <h2>Project 2: Learning HTML and CSS</h2>
+                <p>First, I needed to learn the basics of HTML and CSS for this portfolio website. Starting with semantic HTML elements such as header, paragraphs, and sections, I practiced creating logical layouts that would make sense not only to the browser but to a user reading the content. Going on to CSS, I got to style the webpage, where I was playing with different color schemes, fonts, and spacing to create something visually appealing. I also used CSS Grid and flex display to provide responsive layouts so that it looked great whether one uses his mobile phone or does work on a desktop. This work truly made me realize the balance in the field of web design between aesthetics and functionality. It was quite satisfying to witness the website come together, and this has given a good ground despite the fact that my advanced projects on web development are far ahead.</p>
+            </article>
+        </section>
 
-            <div class="form-group">
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <form action="https://api.staticforms.xyz/submit" method="POST">
+                <input type="hidden" name="accessKey" value="2b1471a0-5d34-46c5-9454-3b443f8d525e">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-            </div>
-            
-            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-            </div>
-            
-            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" class="form-control" placeholder="Enter your message" rows="5" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-    </section>
-</main>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saajith Gnanakanthan</p>
+    </footer>
+</body>
+</html>
